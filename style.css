@@ -1,0 +1,152 @@
+/* Configurações Gerais e Cores Inspiradas na Natureza */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f7f5;
+    color: #2c3e50;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header com degradê verde suave */
+header {
+    background: linear-gradient(135deg, #1e4620 0%, #2e7d32 100%);
+    color: #ffffff;
+    text-align: center;
+    padding: 60px 0;
+    border-bottom: 5px solid #81c784;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+header p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+/* Introdução */
+.intro {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.intro h2 {
+    color: #1b5e20;
+    margin-bottom: 15px;
+}
+
+.intro p {
+    max-width: 800px;
+    margin: 0 auto;
+    color: #546e7a;
+}
+
+/* Layout de Cards */
+.cards-section {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.card {
+    background: #ffffff;
+    display: inline-block;
+    width: 30%;
+    margin: 1.5%;
+    padding: 30px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    border-top: 4px solid #4caf50;
+    cursor: pointer;
+    vertical-align: top;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+}
+
+.card .icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    color: #2e7d32;
+    margin-bottom: 12px;
+}
+
+.card p {
+    font-size: 0.95rem;
+    color: #616161;
+}
+
+/* Painel Dinâmico de Detalhes interativos */
+.detalhe-painel {
+    background-color: #e8f5e9;
+    border-left: 6px solid #2e7d32;
+    padding: 25px;
+    border-radius: 4px;
+    margin: 30px auto;
+    max-width: 96%;
+}
+
+.escondido {
+    display: none;
+}
+
+.detalhe-conteudo h3 {
+    color: #1b5e20;
+    margin-bottom: 10px;
+}
+
+.detalhe-conteudo p {
+    margin-bottom: 15px;
+}
+
+.detalhe-conteudo button {
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.detalhe-conteudo button:hover {
+    background-color: #1b5e20;
+}
+
+/* Rodapé */
+footer {
+    background-color: #212121;
+    color: #b0bec5;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 60px;
+    font-size: 0.9rem;
+}
+
+/* Responsividade básica para celulares */
+@media (max-width: 768px) {
+    .card {
+        width: 96%;
+        margin: 2% 0;
+    }
+}

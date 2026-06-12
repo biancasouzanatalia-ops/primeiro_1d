@@ -8,4 +8,62 @@
 <body>
  <hl>primeiro site da turma</hl>   
 </body>
+</html> 
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biotecnologia Sustentável no Campo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>BioAgro Tech</h1>
+            <p>O Futuro Sustentável da Agricultura Através da Biotecnologia</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="intro">
+            <h2>Inovação Verde para Alimentar o Mundo</h2>
+            <p>A biotecnologia agrícola surge como o pilar fundamental para a sustentabilidade no campo, unindo a produtividade necessária com a preservação ambiental que o planeta exige.</p>
+        </section>
+
+        <section class="cards-section">
+            <div class="card" onclick="mostrarDetalhes('edicao')">
+                <div class="icon">🧬</div>
+                <h3>Edição Genética (CRISPR)</h3>
+                <p>Desenvolvimento de sementes altamente resistentes à seca e pragas sem a necessidade de defensivos químicos.</p>
+            </div>
+
+            <div class="card" onclick="mostrarDetalhes('bioinsumos')">
+                <div class="icon">🍃</div>
+                <h3>Bioinsumos</h3>
+                <p>Uso de microrganismos vivos, bactérias e fungos benéficos para fertilizar o solo e proteger as plantas de forma natural.</p>
+            </div>
+
+            <div class="card" onclick="mostrarDetalhes('verticais')">
+                <div class="icon">🏢</div>
+                <h3>Fazendas Verticais</h3>
+                <p>Cultivos urbanos controlados hidroponicamente que reduzem o uso de água em até 95% e eliminam o desmatamento.</p>
+            </div>
+        </section>
+
+        <section id="detalhe-painel" class="detalhe-painel escondido">
+            <div class="detalhe-conteudo">
+                <h3 id="detalhe-titulo">Título do Painel</h3>
+                <p id="detalhe-texto">Texto detalhado sobre a tecnologia selecionada.</p>
+                <button onclick="fecharDetalhes()">Fechar Informações</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 BioAgro Tech. Tecnologia a serviço da natureza.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
